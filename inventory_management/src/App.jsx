@@ -1,25 +1,34 @@
 import { useState } from "react"
-import { Link, NavLink, Route, Routes } from "react-router-dom"
-import { Navigation, Table, SectionTitle, appContent } from "./components"
+import { Route, Routes } from "react-router-dom"
+import { Navigation, Table, SectionTitle, AppContent, KitchenLayout } from "./components"
 
 
 
 export const App = () => {
 
-  return (
+return (
     
     <>
       <div className="container">
-      <Navigation />
-      <SectionTitle />
-     </div>
-    <Routes>
-      <Route path="/" element/>
-      <Route path="/Graphics" element={<appContent />}/>
-      <Route path="/Kitchen" element/>
-      <Route path="/Cart" element/>
-      <Route path="/Shelf" element/>
-    </Routes>
+        <Navigation />
+        <div className="appLayout">
+          <SectionTitle />
+
+          <AppContent >
+
+            <Routes>
+                
+                <Route path="/" element/>
+                <Route path="/Item_Performance" element/>
+                <Route path="/Kitchen_Layout" element={<KitchenLayout />}/>
+              
+            </Routes>
+
+        </AppContent>
+
+
+        </div>
+      </div>
     </>
     
 

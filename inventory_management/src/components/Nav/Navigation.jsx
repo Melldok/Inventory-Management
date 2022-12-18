@@ -6,26 +6,24 @@ import chef from '../../icons/chef.png';
 import settings from '../../icons/settings.png';
 import backward from '../../icons/backward.png';
 import  './Navigation.css'
-import { Link, NavLink, Route, Routes } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 
 
 export const Navigation = () => {
 
-
-  
-
-
-  return (
+ return (
     <nav> 
         <img className='buttons' src={ backward } alt="" />
         <ul>
-            <li><NavLink className={({ isActive }) => (isActive ? "activated" : "")} to="Cart"><img src={cart} alt=""/></NavLink></li>
-            <li><NavLink className={({ isActive }) => (isActive ? "activated" : "")} to="Graphics"><img src={chart} alt="" /></NavLink></li>
-            <li><NavLink className={({ isActive }) => (isActive ? "activated" : "")} to="Shelf"><img src={shelf} alt="" /></NavLink> </li>
-            <li><NavLink className={({ isActive }) => (isActive ? "activated" : "")} to="Kitchen"><img src={chef} alt="" /></NavLink></li>
+        
+            <li><NavLink><img src={cart} alt=""/></NavLink></li>
+            <li><NavLink className={({ isActive }) => (isActive ? "activated" : "")} to="Item_Performance"><img src={chart} alt="" /></NavLink></li>
+            <li><NavLink><img src={shelf} alt="" /></NavLink> </li>
+            <li><NavLink className={({ isActive }) => (isActive ? "activated" : "")} to="Kitchen_Layout"><img src={chef} alt="" /></NavLink></li>
         </ul>
         <img className="buttons" src={ settings } alt="" />
     </nav>
+   
   )
 }

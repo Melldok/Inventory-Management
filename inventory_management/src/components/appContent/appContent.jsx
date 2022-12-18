@@ -1,8 +1,16 @@
-import React from 'react'
+import { useLocation } from 'react-router-dom'
+import { KitchenLayout } from '../Kitchen/KitchenLayout';
+import  './AppContent.css'
 
-export const appContent = () => {
+
+export const AppContent = () => {
+
+
+  const location = useLocation();
+
   return (
     
-    <h2>appContent</h2>
+    <KitchenLayout />
+  
   )
 }

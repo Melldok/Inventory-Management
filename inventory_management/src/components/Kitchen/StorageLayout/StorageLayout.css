@@ -1,0 +1,167 @@
+.storageLayout {  
+  
+  display: grid;
+  border: 2px solid red;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0em 0em;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Meat Meat Dry-food"
+    "Veggies Veggies Dry-food"
+    "Fish Trash-Section Fruits";
+}
+
+.Veggies {  
+  
+  border: 2px solid red;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 1em;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Box1 Veggies2 Veggies3"
+    "Box1 Veggies2 Veggies3"
+    "Box1 Veggies2 Veggies3";
+  grid-area: Veggies;
+}
+
+.Box1 {  
+  border: 2px solid red;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". Veggies1 Veggies1"
+    ". Veggies1 Veggies1"
+    ". Veggies1 Veggies1";
+  grid-area: Box1;
+}
+
+.Veggies1 { grid-area: Veggies1; }
+
+.Veggies2 { grid-area: Veggies2; }
+
+.Veggies3 { grid-area: Veggies3; }
+
+.Meat {  
+
+  border: 2px solid red;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 2em;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Meat1 Meat2 Meat3"
+    "Meat1 Meat2 Meat3"
+    ". . .";
+  grid-area: Meat;
+}
+
+.Meat3 { grid-area: Meat3; }
+
+.Meat2 { grid-area: Meat2; }
+
+.Meat1 { grid-area: Meat1; }
+
+.Fish {  
+  
+  border: 2px solid red;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . ."
+    "Fish1 . Fish2"
+    "Fish1 . Fish2";
+  grid-area: Fish;
+}
+
+.Fish1 { 
+  
+  grid-area: Fish1;
+  border: 2px solid blue; 
+}
+
+.Fish2 { 
+  grid-area: Fish2;
+  border: 2px solid blue;  
+}
+
+.Dry-food {  
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1em 1em;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Dry1 Dry2 Dry3"
+    ". . Dry4"
+    ". . .";
+  grid-area: Dry-food;
+}
+
+.Dry1 { 
+  grid-area: Dry1;
+  border: 2px solid brown;  
+}
+
+.Dry2 { 
+  grid-area: Dry2; 
+  border: 2px solid brown; 
+}
+
+.Dry3 { 
+  grid-area: Dry3;
+  border: 2px solid brown; 
+ }
+
+.Dry4 { 
+  grid-area: Dry4; 
+  border: 2px solid brown; 
+}
+
+.Trash-Section {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 1em;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . ."
+    "Trash1 Trash2 Trash3"
+    ". . .";
+  grid-area: Trash-Section;
+}
+
+.Trash3 { grid-area: Trash3; }
+
+.Trash2 { grid-area: Trash2; }
+
+.Trash1 { grid-area: Trash1; }
+
+.Fruits {  
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". Fruit1 Fruit1"
+    ". Fruit2 Fruit2"
+    ". Fruit3 Fruit3";
+  grid-area: Fruits;
+}
+
+.Fruit3 { grid-area: Fruit3; }
+
+.Fruit1 { grid-area: Fruit1; }
+
+.Fruit2 { grid-area: Fruit2; }
