@@ -1,0 +1,41 @@
+
+
+.tableLayout{
+    margin-left: 4em;
+    width: 40vw;
+}
+
+table{
+    margin-right: 20px;
+    text-align: center;
+    box-shadow: 0 10px 3px grey;
+    overflow: hidden;
+    border-collapse: collapse;
+    color: rgb(114, 112, 112);
+   
+   
+}
+thead{
+    box-shadow: 0 1px 20px grey;
+}
+th{
+    
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 0.7rem;
+    font-weight: 900;
+}
+
+td{
+    padding: 1rem 2rem;
+
+}
+
+tr:nth-child(even){
+    background-color: #F3F6FC;
+}
+
+
+
+

@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { Route, Routes } from "react-router-dom"
-import { Navigation, Table, SectionTitle, AppContent, KitchenLayout } from "./components"
+import { Navigation, SectionTitle, KitchenLayout } from "./components"
 
 
 
@@ -14,7 +14,7 @@ return (
         <div className="appLayout">
           <SectionTitle />
 
-          <AppContent >
+
 
             <Routes>
                 
@@ -24,7 +24,7 @@ return (
               
             </Routes>
 
-        </AppContent>
+      
 
 
         </div>
