@@ -231,10 +231,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+ 
 }
 
 
 .clickable:hover{
   background-color: rgb(13, 74, 145);
   transition: 0.8s ;
+  color: white;
+}
+
+
+.clicked{
+  border: 3px solid rgb(71, 71, 71);
+  transition: 0.5s;
 }
