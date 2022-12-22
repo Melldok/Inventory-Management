@@ -16,7 +16,7 @@ export const KitchenLayout = () => {
     
 
     <div className='kitchenLayout'>
-        <StorageLayout setSelectedStorage={setSelectedStorage} />
+        <StorageLayout  setSelectedStorage={setSelectedStorage} />
         <TableComponent selectedStorage={selectedStorage} setSelectedStorage={setSelectedStorage}/>
     </div>
 

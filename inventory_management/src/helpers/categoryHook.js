@@ -9,6 +9,7 @@ export const useCategory = (initialValue) =>{
     const [itemList, setItemList] = useState([]);
     
     const [selectedCategory, setSelectedCategory] = useState();
+    
 
     const defaultItems = AllItems;
 
@@ -22,6 +23,7 @@ export const useCategory = (initialValue) =>{
         setSelectedCategory(event.target.value);
     }
 
+   
     const getFilteredList = () => {
         if (!selectedCategory) {
         return itemList;
@@ -30,8 +32,10 @@ export const useCategory = (initialValue) =>{
     }
 
     const filterByStorage = (activeStorage) => {
-        return itemList.filter((item) => item.storage === activeStorage )
+        return  itemList.filter((item) => item.storage === activeStorage )
     }
+
+    
 
 
     const filteredList = useMemo(getFilteredList, [selectedCategory, itemList]);
@@ -44,7 +48,8 @@ export const useCategory = (initialValue) =>{
         handleCategoryChange,
         getFilteredList,
         filteredList,
-        filterByStorage
+        filterByStorage,
+        
     }
 
 }

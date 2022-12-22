@@ -2,9 +2,9 @@
 
 import { useEffect, useMemo, useState } from 'react';
 import { useCategory } from '../../../helpers/categoryHook';
-//import { AllItems } from './ddbb';
 import './table.css'
 import { TableItem } from './TableItem'
+
 
 
 

@@ -1,14 +1,11 @@
 
 
-import { TableComponent } from '../Table/TableComponent'
+
 import './StorageLayout.css'
-import { useCategory } from '../../../helpers/categoryHook';
 
 export const StorageLayout = ({ setSelectedStorage}) => {
 
-      
-  const { itemList, selectedCategory, defaultItems, handleCategoryChange, getFilteredList, filteredList, filterByStorage} = useCategory()
-
+  
     const handleSelectedStorage = (event) => {
 
         const allStorage = document.querySelectorAll('.clickable')
@@ -19,6 +16,7 @@ export const StorageLayout = ({ setSelectedStorage}) => {
 
         setSelectedStorage(event.target.textContent)
         event.currentTarget.classList.add('clicked')
+        
 
     }
 

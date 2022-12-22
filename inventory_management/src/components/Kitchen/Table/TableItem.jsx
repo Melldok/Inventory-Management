@@ -1,5 +1,6 @@
 
 
+
 export const TableItem = ({category, id, product_name, img, in_stock, storage}) => {
   return (
     <tr category={category}>
