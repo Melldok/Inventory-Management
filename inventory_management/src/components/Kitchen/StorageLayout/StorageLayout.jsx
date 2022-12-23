@@ -20,8 +20,10 @@ export const StorageLayout = ({ setSelectedStorage}) => {
 
     }
 
+    
+
   
-  
+    
     return (
     <div className="storageLayout">
         <div className="Veggies">

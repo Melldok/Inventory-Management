@@ -9,8 +9,7 @@
 table{
     margin-right: 20px;
     text-align: center;
-    box-shadow: 0 10px 1px grey;
-  
+    box-shadow: 0 10px 20px grey;
     border-collapse: collapse;
     color: rgb(114, 112, 112);
    
@@ -89,3 +88,5 @@ tr:nth-child(even){
   table img{
     border-radius: 20%;
   }
+
+  

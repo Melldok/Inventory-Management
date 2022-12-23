@@ -1,9 +1,9 @@
 
-
-import { useEffect, useMemo, useState } from 'react';
 import { useCategory } from '../../../helpers/categoryHook';
+import { CreateNew } from './modal/CreateNew';
 import './table.css'
 import { TableItem } from './TableItem'
+
 
 
 
@@ -11,7 +11,7 @@ import { TableItem } from './TableItem'
 export const TableComponent = ({selectedStorage, setSelectedStorage}) => {
 
   
-  const { itemList, selectedCategory, defaultItems, handleCategoryChange, getFilteredList, filteredList, filterByStorage} = useCategory()
+  const { handleCategoryChange, filteredList, filterByStorage } = useCategory()
 
   const filteredByStorage = filterByStorage(selectedStorage)
 
@@ -25,6 +25,8 @@ export const TableComponent = ({selectedStorage, setSelectedStorage}) => {
     });
     setSelectedStorage(false)
   }
+
+  
 
 
   return (
@@ -41,7 +43,8 @@ export const TableComponent = ({selectedStorage, setSelectedStorage}) => {
             <option value="Fish">Fish</option>
         </select>
       
-        <button>Create New Item</button>
+      <CreateNew />
+        
     </div>
 
   
@@ -49,7 +52,7 @@ export const TableComponent = ({selectedStorage, setSelectedStorage}) => {
         <table>
           <thead>
             <tr>
-              <th>ID</th>
+              
               <th>Product Name</th>
               <th>Image</th>
               <th>In Stock</th>

@@ -1,0 +1,34 @@
+
+.modal{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    z-index: 20;
+    top: 20%;
+    left: 35%;
+    box-shadow: 1px 20px 30px rgb(143, 143, 143);
+
+}
+
+.modal .head{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.modal .head button{
+    margin-left: 10px;
+}
+
+
+.show{
+    display: flex;
+}
