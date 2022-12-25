@@ -10,7 +10,7 @@ table{
     margin-right: 20px;
     text-align: center;
     box-shadow: 0 10px 20px grey;
-    border-collapse: collapse;
+  border-collapse: collapse;
     color: rgb(114, 112, 112);
    
    
@@ -44,25 +44,29 @@ tr:nth-child(even){
     align-items: center;
 }
 
-.categories h3, .categories select{
+.categories h3{
     margin-right: 20px;
 }
 
-.categories select, .categories button{
+select{
+    margin: 0 10px;
+}
+
+.categories select, button, input[type=submit], input[type=file] {
     padding: 10px; 
     background:#edf2ff; 
     border:none;
     cursor: pointer;
 }
 
-.categories button:hover, .categories select:hover{
+button:hover, .categories select:hover, input[type=submit]:hover, input[type=file]:hover {
     background-color: rgb(13, 74, 145);
     color: white;
     transition: 0.6s;
 }
 
 
-.categories button, .categories select{
+.categories button, .categories select, input[type=submit], input[type=file] {
  border-radius: 10px;
 }
 

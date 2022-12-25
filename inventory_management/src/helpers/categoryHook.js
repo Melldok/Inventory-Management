@@ -35,7 +35,7 @@ export const useCategory = (initialValue) =>{
         return  itemList.filter((item) => item.storage === activeStorage )
     }
 
-    const createElement = (product_name, in_stock, category, img = "https://source.unsplash.com/30x30" , storage) => {product_name, in_stock, category, img, storage}
+  
 
 
     

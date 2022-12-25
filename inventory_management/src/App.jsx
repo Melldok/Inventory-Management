@@ -19,7 +19,6 @@ return (
             <Routes>
                 
                 <Route path="/" element/>
-                <Route path="/Item_Performance" element/>
                 <Route path="/Kitchen_Layout" element={<KitchenLayout />}/>
               
             </Routes>

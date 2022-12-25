@@ -1,13 +1,13 @@
 
 .modal{
-    width: 500px;
-    height: 500px;
+    width: fit-content;
+    height: 20vh;
     background-color: white;
     border-radius: 20px;
     padding: 20px;
     box-sizing: border-box;
     display: none;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     position: absolute;
@@ -21,6 +21,7 @@
 .modal .head{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 30px;
     
 }
 
@@ -32,3 +33,64 @@
 .show{
     display: flex;
 }
+
+
+form{
+    display: flex;
+    box-sizing: border-box;
+    
+}
+
+.close{
+    width: 100px;
+}
+
+
+input[type=file]::after{
+    content: none;
+}
+
+input{
+    text-align: center;
+}
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.inputfile + label {
+    padding: 10px; 
+    background:#edf2ff; 
+    border:none;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color: rgb(13, 74, 145);
+    color: white;
+    transition: 0.6s;
+    
+}
+
+input[type=submit]{
+    margin: 0 10px;
+}
+
+input[type=text]{
+    margin-right: 10px;
+}
+
+input{
+    border-radius: 10px;
+    font-size: 1em;
+}
+
+

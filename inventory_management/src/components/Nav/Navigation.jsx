@@ -18,7 +18,7 @@ export const Navigation = () => {
         <ul>
         
             <li><NavLink><img src={cart} alt=""/></NavLink></li>
-            <li><NavLink className={({ isActive }) => (isActive ? "activated" : "")} to="Item_Performance"><img src={chart} alt="" /></NavLink></li>
+            <li><NavLink><img src={chart} alt="" /></NavLink></li>
             <li><NavLink><img src={shelf} alt="" /></NavLink> </li>
             <li><NavLink className={({ isActive }) => (isActive ? "activated" : "")} to="Kitchen_Layout"><img src={chef} alt="" /></NavLink></li>
         </ul>

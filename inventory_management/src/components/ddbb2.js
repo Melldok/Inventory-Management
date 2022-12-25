@@ -1,7 +1,6 @@
 
 
-
-export const AllItems = [
+ const AllItems = [
     { product_name: "Green Apple", in_stock : 23, category : "Vegetables", img: "https://source.unsplash.com/30x30",storage: "V1" },
     { product_name: "Red Apple", in_stock : 21, category : "Vegetables", img: "https://source.unsplash.com/30x30",storage: "V2"  },
     { product_name: "veg1", in_stock : 2, category : "Vegetables", img: "https://source.unsplash.com/30x30",storage: "V3"  },
