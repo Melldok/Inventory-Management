@@ -28,10 +28,10 @@ export const StorageLayout = ({ setSelectedStorage}) => {
     <div className="storageLayout">
         <div className="Veggies">
             <div className="Box1">
-            <div className="Veggies1 clickable" onClick={handleSelectedStorage}><p>V1</p></div>
+            <div className="Veggies1 clickable veggy" onClick={handleSelectedStorage}><p>V1</p></div>
             </div>
-            <div className="Veggies2 clickable" onClick={handleSelectedStorage}><p>V2</p></div>
-            <div className="Veggies3 clickable" onClick={handleSelectedStorage}><p>V3</p></div>
+            <div className="Veggies2 clickable veggy" onClick={handleSelectedStorage}><p>V2</p></div>
+            <div className="Veggies3 clickable veggy" onClick={handleSelectedStorage}><p>V3</p></div>
         </div>
         <div className="Meat">
             <div className="Meat3 clickable" onClick={handleSelectedStorage}><p>M3</p></div>

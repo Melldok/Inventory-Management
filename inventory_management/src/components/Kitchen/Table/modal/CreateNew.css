@@ -1,10 +1,10 @@
 
 .modal{
     width: fit-content;
-    height: 20vh;
+    height: fit-content;
     background-color: white;
     border-radius: 20px;
-    padding: 20px;
+    padding: 50px;
     box-sizing: border-box;
     display: none;
     justify-content: center;

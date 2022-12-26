@@ -1,6 +1,7 @@
 
 import { useCategory } from '../../../helpers/categoryHook';
 import { CreateNew } from './modal/CreateNew';
+import { Search } from './Search';
 import './table.css'
 import { TableItem } from './TableItem'
 
@@ -11,10 +12,11 @@ import { TableItem } from './TableItem'
 export const TableComponent = ({selectedStorage, setSelectedStorage}) => {
 
   
-  const { handleCategoryChange, filteredList, filterByStorage } = useCategory()
+  const { handleCategoryChange, filteredList, filterByStorage, handleSearch } = useCategory()
 
   const filteredByStorage = filterByStorage(selectedStorage)
 
+  // When a storage is selected, activate a border. Clean the rest.
 
   const handleUnselectedStorage = () => {
     
@@ -24,6 +26,7 @@ export const TableComponent = ({selectedStorage, setSelectedStorage}) => {
         storage.classList.remove('clicked')
     });
     setSelectedStorage(false)
+
   }
 
   
@@ -44,6 +47,7 @@ export const TableComponent = ({selectedStorage, setSelectedStorage}) => {
         </select>
       
       <CreateNew />
+      <input onChange={handleSearch} className="searchInput" type="text" name="" id="" placeholder="Search Item"/>
         
     </div>
 
@@ -57,9 +61,12 @@ export const TableComponent = ({selectedStorage, setSelectedStorage}) => {
               <th>Image</th>
               <th>In Stock</th>
               <th>Storage</th>
+              <th>Action</th>
             </tr>
           </thead>
           <tbody>
+
+            
             
 
             { 
@@ -67,6 +74,12 @@ export const TableComponent = ({selectedStorage, setSelectedStorage}) => {
             selectedStorage ? 
             
             filteredByStorage.map((element, index) => (
+              <TableItem {...element} key={index} />
+            )) 
+
+            : handleSearch ?
+
+            filteredList.map((element, index) => (
               <TableItem {...element} key={index} />
             )) 
             

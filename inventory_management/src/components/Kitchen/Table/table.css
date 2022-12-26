@@ -93,4 +93,52 @@ button:hover, .categories select:hover, input[type=submit]:hover, input[type=fil
     border-radius: 20%;
   }
 
+  .addition{
+    background-color: transparent;
+   padding: 0;
+   margin: 10px;
+  }
+
+  .addition:hover{
+    background-color: transparent;
+    scale: 1.2;
+  }
+
+  .imageAdd{
+    height: 30px;
+    width: 30px;
+  }
+
   
+
+  .flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .actionButtons:nth-child(1){
+    margin-right: 10px;
+    background-color: rgb(126, 206, 119);
+    border-radius: 5px;
+  }
+
+  .actionButtons:nth-child(2){
+    background-color: rgb(236, 113, 113);
+    border-radius: 5px;
+  }
+
+  .actionButtons{
+    cursor: pointer;
+  }
+
+  .actionButtons:hover{
+    scale: 1.2;
+    color: black;
+  }
+
+  .searchInput{
+    margin-left: 10px;
+    border-radius: 5px;
+    height: 2em;
+  }

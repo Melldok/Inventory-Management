@@ -9,6 +9,8 @@ export const useCategory = (initialValue) =>{
     const [itemList, setItemList] = useState([]);
     
     const [selectedCategory, setSelectedCategory] = useState();
+
+    
     
 
     const defaultItems = AllItems;
@@ -38,6 +40,22 @@ export const useCategory = (initialValue) =>{
   
 
 
+      const handleSearch = (event) => {
+
+        if (event.target.value === "") {
+          setItemList(AllItems);
+          return;
+        }
+        const filteredValues = itemList.filter(
+          (item) =>
+            item.product_name.toLowerCase().indexOf(event.target.value.toLowerCase()) !== -1
+        );
+        setItemList(filteredValues);
+      };
+
+  
+
+
     
     
 
@@ -53,6 +71,7 @@ export const useCategory = (initialValue) =>{
         getFilteredList,
         filteredList,
         filterByStorage,
+        handleSearch
         
         
     }
