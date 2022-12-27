@@ -2,22 +2,22 @@
 
 .tableLayout{
     margin-left: 4em;
-    width: 40vw;
-    
+
+
 }
 
 table{
     margin-right: 20px;
     text-align: center;
-    box-shadow: 0 10px 20px grey;
-  border-collapse: collapse;
+    box-shadow: 0 1px 1px grey;
+    border-collapse: collapse;
     color: rgb(114, 112, 112);
    
    
    
 }
 thead{
-    box-shadow: 0 1px 20px grey;
+    box-shadow: 0 0 5px grey;
 }
 th{
     
@@ -142,3 +142,4 @@ button:hover, .categories select:hover, input[type=submit]:hover, input[type=fil
     border-radius: 5px;
     height: 2em;
   }
+

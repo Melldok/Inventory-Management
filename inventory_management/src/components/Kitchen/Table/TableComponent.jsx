@@ -43,6 +43,7 @@ export const TableComponent = ({selectedStorage, setSelectedStorage}) => {
             <option value="Vegetables">Vegetables</option>
             <option value="Meat">Meat</option>
             <option value="Dry Food">Dry Food</option>
+            <option value="Fruit">Fruits</option>
             <option value="Fish">Fish</option>
         </select>
       
