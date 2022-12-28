@@ -5,6 +5,8 @@ import { AllItems } from '../components/Kitchen/Table/ddbb';
 
 export const useCategory = (initialValue) =>{
 
+  
+
 
     const [itemList, setItemList] = useState([]);
     
@@ -66,7 +68,6 @@ export const useCategory = (initialValue) =>{
     return{
         itemList,
         selectedCategory,
-        defaultItems,
         handleCategoryChange,
         getFilteredList,
         filteredList,

@@ -8,14 +8,13 @@ import { Modal } from './Modal';
 
 
 export const CreateNew = () => {
-  
-
-  
-
+    
   const handleOpenning = () => {
    
     const modal = document.querySelector(".modal")
     modal.classList.toggle("show")
+
+    
   }
 
   

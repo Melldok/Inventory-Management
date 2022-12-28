@@ -2,7 +2,6 @@
 import { useState } from 'react'
 import add from '../../../icons/add.png'
 import substract from '../../../icons/substract.png'
-import { AllItems } from './ddbb'
 
 export const TableItem = ({category, product_name, img, in_stock, storage}) => {
 
