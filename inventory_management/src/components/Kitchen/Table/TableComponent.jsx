@@ -1,7 +1,7 @@
 
+
 import { useCategory } from '../../../helpers/categoryHook';
 import { CreateNew } from './modal/CreateNew';
-import { Search } from './Search';
 import './table.css'
 import { TableItem } from './TableItem'
 
@@ -9,7 +9,12 @@ import { TableItem } from './TableItem'
 
 
 
+
+
+
 export const TableComponent = ({selectedStorage, setSelectedStorage}) => {
+
+
 
   
   const { handleCategoryChange, filteredList, filterByStorage, handleSearch } = useCategory()

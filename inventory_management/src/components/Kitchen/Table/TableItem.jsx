@@ -1,9 +1,15 @@
 
+
+import axios from 'axios'
 import { useState } from 'react'
 import add from '../../../icons/add.png'
 import substract from '../../../icons/substract.png'
 
-export const TableItem = ({category, product_name, img, in_stock, storage}) => {
+
+export const TableItem = ({id,category, product_name, src, in_stock, storage}) => {
+
+
+// Each row has its own state stock that can be changed with buttons
 
   const [stock, setStock] = useState(in_stock)
 
@@ -18,13 +24,36 @@ export const TableItem = ({category, product_name, img, in_stock, storage}) => {
   
   }
 
+  // Each element comes with its own id, so we use that id to send the Delete request to the backend
+
+  const handleDelete = async ($id) => {
+    try {
+      await axios.delete(`http://localhost:8800/items/${id}`);
+      window.location.reload()
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  const handleUpdate = async ($id) => {
+    try {
+      console.log("Update has been called")
+      await axios.put(`http://localhost:8800/items/${id}`, {
+        in_stock: stock
+      });
+      window.location.reload()
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
 
 
 
   return (
     <tr category={category}>
-        <td>{product_name}</td>
-        <td><img src={img} alt="" /></td>
+        <td className='productName'><p>{product_name}</p></td>
+        <td><img src={src} alt="" /></td>
         <td className='flex'>
           <button className='addition' onClick={incrementStock}><img className='imageAdd' src={add}/></button>
             <p>{stock}</p>
@@ -32,8 +61,8 @@ export const TableItem = ({category, product_name, img, in_stock, storage}) => {
           </td>
         <td>{storage}</td>
         <td className='flex'>
-          <button className='actionButtons'>Update</button>
-          <button className='actionButtons'>Delete</button>
+          <button className='actionButtons' onClick={handleUpdate}>Update</button>
+          <button className='actionButtons' onClick={handleDelete}>Delete</button>
         </td>
     </tr>
   )
