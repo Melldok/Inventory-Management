@@ -21,7 +21,7 @@ export const TableComponent = ({selectedStorage, setSelectedStorage}) => {
 
   const filteredByStorage = filterByStorage(selectedStorage)
 
-  // When a storage is selected, activate a border. Clean the rest.
+
 
   const handleUnselectedStorage = () => {
     
@@ -34,7 +34,6 @@ export const TableComponent = ({selectedStorage, setSelectedStorage}) => {
 
   }
 
-  
 
 
   return (
